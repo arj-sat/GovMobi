@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GovMobi</string>
+    <string name="toolbar_title">Apply or Renew License</string>
+    <string name="no_active_expired_license">No active or expired license found</string>
+    <string name="btn_license_apply">Apply</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_sumbit_appl">Submit</string>
+    <string name="txt_appl_status">Application Status</string>
+    <string name="txt_new_appl">No active application. Click Apply to start.</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_contact_number">Contact Number</string>
+    <string name="hint_certificate_number">Certificate Number (if required)</string>
+    <string name="hint_remarks">Remarks</string>
+    <string name="hint_payment_reference">Payment Reference Number</string>
+    <string name="step_indicator">Step %1$d: %2$s</string>
+    <string name="bsb_label">BSB: %1$s</string>
+    <string name="account_number_label">Account Number: %1$s</string>
+    <string name="search_hint_text">
+🔍 Try searching for:\n
+• Vehicle info: "rego XYZ123", "license plate", "car registration"\n
+• Driver license: "license", "driving expiry", "valid until"\n
+• Help topics: "how to renew", "upload documents", "intro"\n\n
+👉 Type "intro" to view all help instructions.
+</string>
+</resources>

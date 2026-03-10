@@ -1,0 +1,64 @@
+{
+    "U7vBZWAat5dR7iM7GtvwuKQ4gTi2": {
+      "profile": {
+        "name": "Alice Smith",
+        "email": "rh@gmail.com",
+        "phone": "0412345678",
+        "licenseNumber": "7884012",
+        "dob": "01-01-1999",
+        "address": "12 Example St"
+      },
+      "vehicles": {
+        "vehicle1": {
+          "vehicleName": "Mazda 3",
+          "licensePlate": "XYZ-789",
+          "vin": "VIN789XYZ123",
+          "registrationStatus": "VALID",
+          "registrationExpiry": "10-10-2025",
+          "lastMaintenance": "10-04-2024",
+          "lastMaintenanceStatus": "VALID",
+          "stolenStatus": "NOT STOLEN",
+          "lastKnownLocation": "Sydney, NSW"
+        }
+      },
+      "licenses": {
+        "license1": {
+          "licenseType": "Provisional 2",
+          "issueDate": "01-01-2024",
+          "expiryDate": "01-01-2027",
+          "status": "active"
+        }
+      }
+    },
+    "ycx4pfzo5XQAGarDpu6FpyXK9x22": {
+        "profile": {
+          "name": "Test",
+          "email": "test@gmail.com",
+          "phone": "0412345678",
+          "licenseNumber": "12313123",
+          "dob": "01-01-1999",
+          "address": "1112 Example St"
+        },
+      "vehicles": {
+        "vehicle1": {
+          "vehicleName": "Toyota Corolla",
+          "licensePlate": "ABC-123",
+          "vin": "XYZ123ABC456",
+          "registrationStatus": "VALID",
+          "registrationExpiry": "12-12-2025",
+          "lastMaintenance": "01-05-2024",
+          "lastMaintenanceStatus": "VALID",
+          "stolenStatus": "NOT STOLEN",
+          "lastKnownLocation": "Canberra, ACT"
+        }
+      },
+      "licenses": {
+        "license1": {
+          "licenseType": "Provisional 1",
+          "issueDate": "01-01-2023",
+          "expiryDate": "01-01-2026",
+          "status": "active"
+        }
+      }
+    }
+}

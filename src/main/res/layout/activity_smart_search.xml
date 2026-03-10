@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="60dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search (e.g., fine, rego)"
+        android:completionThreshold="1"
+        android:inputType="text"
+        android:layout_marginTop="40dp"
+    android:padding="10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/filterButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/filterVehiclesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicles"
+            android:background="@drawable/btn_filter_background"
+            android:textColor="@drawable/btn_filter_text_color" />
+
+        <Button
+            android:id="@+id/filterLicensesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licenses"
+            android:background="@drawable/btn_filter_background"
+            android:textColor="@drawable/btn_filter_text_color"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/filterInstructionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:text="Instr."
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/btn_filter_background"
+            android:textColor="@drawable/btn_filter_text_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/resultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/searchHintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Try searching:\n• Instruction keywords: intro, renew, upload documents\n• License: license, driving expiry, photo taken\n• Vehicle: e.g. COM-210 (note: you can only view your own license plates)\n• Mixed keywords: try 'COM-210 license instruction' to search all at once\n\nUse filters above to narrow down results."
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:gravity="start"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="visible" />
+
+
+
+</LinearLayout>

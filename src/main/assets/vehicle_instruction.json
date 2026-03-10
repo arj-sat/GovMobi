@@ -1,0 +1,12 @@
+{
+  "ABC123": { "rego": "ABC123", "status": "Active", "expiry": "2025-06-01" },
+  "DEF456": { "rego": "DEF456", "status": "Suspended", "expiry": "2024-11-12" },
+  "GHI789": { "rego": "GHI789", "status": "Expired", "expiry": "2023-08-20" },
+  "JKL012": { "rego": "JKL012", "status": "Active", "expiry": "2025-02-14" },
+  "MNO345": { "rego": "MNO345", "status": "Expired", "expiry": "2024-04-03" },
+  "PQR678": { "rego": "PQR678", "status": "Suspended", "expiry": "2024-09-30" },
+  "STU901": { "rego": "STU901", "status": "Active", "expiry": "2025-12-25" },
+  "VWX234": { "rego": "VWX234", "status": "Expired", "expiry": "2023-10-01" },
+  "YZA567": { "rego": "YZA567", "status": "Suspended", "expiry": "2024-06-15" },
+  "BCD890": { "rego": "BCD890", "status": "Active", "expiry": "2026-01-01" }
+}

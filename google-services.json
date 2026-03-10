@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "382888650489",
+    "project_id": "gp25s1app",
+    "storage_bucket": "gp25s1app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382888650489:android:8b59edb2d7125b227ae428",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf7jjquNvNJUvPjAUhhM9BLDh9BVoamY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

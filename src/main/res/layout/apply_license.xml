@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_applylicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/toolbar_title"
+        app:titleTextColor="#F6E4E4" />
+
+    <!-- Status Heading -->
+    <TextView
+        android:id="@+id/tv_status_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/txt_appl_status"
+        android:textColor="#673AB7"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Status Message -->
+    <TextView
+        android:id="@+id/tv_status_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_new_appl"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/bt_reapply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Reapply / Submit Evidence"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_applylicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_license_apply"
+        android:textStyle="bold" />
+
+    <!-- Form Container -->
+    <LinearLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Step indicator -->
+        <TextView
+            android:id="@+id/tv_current_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1"
+            android:textSize="16sp"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
+
+        <!-- Document Fields -->
+        <LinearLayout
+            android:id="@+id/document_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/f_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Full Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/f_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <!-- Added missing f_adds -->
+            <EditText
+                android:id="@+id/f_adds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Address"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/f_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Contact Number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/f_cert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Certificate Number (if required)"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/f_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Remarks"
+                android:inputType="textMultiLine" />
+
+            <Spinner
+                android:id="@+id/spinner_license_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/btn_sumbit_appl" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/btn_cancel" />
+    </LinearLayout>
+
+    <!-- Payment Container -->
+    <LinearLayout
+        android:id="@+id/payment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_bank_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank details will appear here"
+            android:paddingBottom="16dp" />
+
+        <!-- Added missing et_reference_number -->
+        <EditText
+            android:id="@+id/et_reference_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Enter Transaction Reference"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_final_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Final Submit" />
+
+        <Button
+            android:id="@+id/btn_cancel_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Cancel" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="visibility_options">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Vehicle"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/et_vehicle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Name (e.g., Subaru Altima 2015)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_license_plate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="License Plate (e.g., SJP-567)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_vin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VIN (e.g., LV8ICSWQSZHG0O7RB)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_registration_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Status (e.g., REGISTERED)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_registration_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Expiry (e.g., 04 Dec 2026)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_last_maintenance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Maintenance (e.g., 06 Nov 2024 at Subaru Service Center)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_last_maintenance_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Maintenance Status (e.g., VALID)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_stolen_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stolen Status (e.g., NOT STOLEN)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_last_known_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Known Location (e.g., Darwin, Australia)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Visibility Spinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visibility: "
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

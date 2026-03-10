@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FAFAFA"
+android:padding="16dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Top section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Licenses"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+<!--     Search bar -->
+<!--    <EditText-->
+<!--        android:id="@+id/search_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Search licenses..."-->
+<!--        android:padding="12dp"-->
+
+<!--        android:background="@android:drawable/edit_text"-->
+<!--        android:drawableLeft="@android:drawable/ic_menu_search"-->
+<!--        android:layout_marginBottom="16dp" />-->
+
+    <!-- Licenses container -->
+    <LinearLayout
+        android:id="@+id/licenses_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>
+
+</ScrollView>

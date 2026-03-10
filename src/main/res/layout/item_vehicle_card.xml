@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Original LinearLayout content remains unchanged -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/dashboard_card_bg"
+        android:padding="16dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/image_vehicle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_vehicle"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Vehicle icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/text_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XYZ-5678"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/text_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honda Civic"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registered"
+                android:layout_marginTop="6dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:backgroundTint="#D4F5E4"
+                android:textColor="#008000"
+                android:background="@drawable/rounded_bg" />
+        </LinearLayout>
+
+        <!-- 删除按钮保留注释状态 -->
+        <!--
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/>
+        -->
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:contentDescription="background"
+        android:alpha="1.0" />
+
+    <!-- Content layer -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="#E6FFFFFF"> <!-- More opaque white background -->
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:shadowColor="#66000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1.5"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a new account"
+                android:textColor="#222222"
+                android:shadowColor="#66000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1.2"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:textColor="#222222"
+                android:textColorHint="#555555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:textColor="#222222"
+                android:textColorHint="#555555"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:textColor="#222222"
+                android:textColorHint="#555555"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:textColor="#222222"
+                android:textColorHint="#555555"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Sign Up button -->
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:text="Sign Up"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#7B1FA2"
+                android:layout_marginTop="24dp"
+                android:minHeight="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Existing account prompt -->
+            <TextView
+                android:id="@+id/textLogin"
+                android:text="Already have an account? Log in"
+                android:textColor="#222222"
+                android:shadowColor="#66000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1.2"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Loading circle -->
+            <ProgressBar
+                android:id="@+id/loginProgressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

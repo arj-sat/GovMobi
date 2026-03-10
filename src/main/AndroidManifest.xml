@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.QAActivity"
+            android:exported="false" />
+        <!-- Main launcher activity (Login) -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AdminActivity"
+            android:exported="true"
+            android:parentActivityName=".activity.LoginActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.LoginActivity" />
+        </activity> <!-- SignUp page -->
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QAActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" /> <!-- Optional MainActivity -->
+        <!-- <activity -->
+        <!-- android:name=".MainActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- Dashboard activity added -->
+        <activity
+            android:name=".activity.AdminProfileActivity"
+            android:parentActivityName=".activity.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VehicleStatusActivity"
+            android:parentActivityName=".activity.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LRequestReviewActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.DashboardActivity">
+
+        </activity>
+<!--        <activity-->
+<!--            android:exported="false"-->
+<!--            android:parentActivityName=".activity.DashboardActivity">-->
+<!--        </activity>-->
+        <activity android:name=".activity.AddVehicleActivity" />
+        <activity
+            android:name=".activity.MyVehiclesActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DashboardActivity" />
+        </activity>
+        <activity android:name=".activity.VehicleDetailActivity" />
+
+        <activity
+            android:name=".activity.MyLicensesActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DashboardActivity" />
+        </activity>
+
+        <activity android:name=".activity.LicenseDetailActivity" />
+        <activity
+            android:name=".activity.ApplyLicenseActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.SmartSearchActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DashboardActivity" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+</manifest>
