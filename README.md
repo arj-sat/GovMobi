@@ -1,5 +1,7 @@
-# [G37 - Cipher] Report - GovMobi Application
-<hr>
+# Summary
+GovMobi is a mobile application developed as part of ANU's Software Construction course by a group of 5 students for streamlined vehicle and license management, built with Java and Firebase using Android Studio. It offers role-based dashboards for vehicle owners and administrators, enabling secure vehicle registration, multi-stage license applications, and real-time request processing. The app features a smart grammar-based search and an AI-powered chatbot integrated via the Gemini API to assist users. Under the hood, it utilises custom data structures like an AVL tree for efficient data handling and incorporates design patterns such as Factory, Iterator, and Facade. 
+# Report - GovMobi Application
+
 
 ## Table of Contents
 
